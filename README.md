@@ -26,3 +26,7 @@ go to /dashboard-and-web-maos-app-zara/main.py and run this at second terminal
 python main.py
 ```
 it will run on port http://127.0.0.1:8000
+
+in order to get work on dummy login, both dashboard and login page should active at the same time.
+
+no need username and password, just hit login button
