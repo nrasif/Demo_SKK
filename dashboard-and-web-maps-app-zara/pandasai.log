@@ -1,0 +1,2283 @@
+2023-11-09 17:00:49 [INFO] Question: summerize the data
+2023-11-09 17:00:49 [INFO] Running PandasAI with openai LLM...
+2023-11-09 17:00:49 [INFO] Prompt ID: f3a20af3-941a-48c3-8451-9a73d8b94d14
+2023-11-09 17:00:56 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-09 17:00:56 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-09 17:00:56 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-09 17:00:56 [INFO] Executed in: 7.217509746551514s
+2023-11-09 17:00:58 [INFO] Question: summerize the data
+2023-11-09 17:00:58 [INFO] Running PandasAI with openai LLM...
+2023-11-09 17:00:58 [INFO] Prompt ID: 574128dc-b843-4b65-baf0-3906404f5e20
+2023-11-09 17:00:58 [INFO] Using cached response
+2023-11-09 17:00:58 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-09 17:00:58 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-09 17:00:58 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-09 17:00:58 [INFO] Executed in: 0.019487380981445312s
+2023-11-09 17:05:49 [INFO] Question: summary
+2023-11-09 17:05:49 [INFO] Running PandasAI with openai LLM...
+2023-11-09 17:05:49 [INFO] Prompt ID: c6df2f45-6a7e-425d-896e-76647345bba9
+2023-11-09 17:05:56 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-09 17:05:56 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-09 17:05:56 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-09 17:05:56 [INFO] Executed in: 7.1559836864471436s
+2023-11-09 17:16:23 [INFO] Question: summerize the data
+2023-11-09 17:16:23 [INFO] Running PandasAI with openai LLM...
+2023-11-09 17:16:23 [INFO] Prompt ID: f97bb4ec-e93d-4a48-90b6-db473db41f0a
+2023-11-09 17:16:31 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-09 17:16:31 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-09 17:16:31 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  BORE_OIL_VOL   BORE_GAS_VOL  BORE_WAT_VOL   BORE_WI_VOL
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000   9161.000000    9161.000000   9161.000000   5706.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060   1095.631548  161049.059703   1672.151332   5315.480815
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928   1323.538151  188136.410434   1706.982853   2181.486695
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000      0.000000       0.000000   -457.840000      0.000000
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000    190.690000   29430.590000     19.870000   4338.204674
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969    557.550000   87749.660000   1097.790000   5504.739769
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020   1345.200000  202482.300000   3260.950000   6781.058040
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570   5901.840000  851131.520000   8019.740000  10013.600000}
+2023-11-09 17:16:31 [INFO] Executed in: 8.468757152557373s
+2023-11-09 17:17:05 [INFO] Question: summerize
+2023-11-09 17:17:05 [INFO] Running PandasAI with openai LLM...
+2023-11-09 17:17:05 [INFO] Prompt ID: 80e48972-9ac2-47c6-ba6e-a5d1c737b3ca
+2023-11-09 17:17:12 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-09 17:17:12 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-09 17:17:12 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-09 17:17:12 [INFO] Executed in: 7.036157846450806s
+2023-11-09 17:31:46 [INFO] Question: summerize
+2023-11-09 17:31:46 [INFO] Running PandasAI with openai LLM...
+2023-11-09 17:31:46 [INFO] Prompt ID: ee9012de-86a9-4209-8c2c-3b7da216ccc5
+2023-11-09 17:31:46 [INFO] Using cached response
+2023-11-09 17:31:46 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-09 17:31:46 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-09 17:31:46 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-09 17:31:46 [INFO] Executed in: 0.01670551300048828s
+2023-11-10 10:25:59 [INFO] Question: summerize the data
+2023-11-10 10:25:59 [INFO] Running PandasAI with openai LLM...
+2023-11-10 10:25:59 [INFO] Prompt ID: d0df5822-8107-4bf7-bb4e-6be7867f5e78
+2023-11-10 10:25:59 [INFO] Using cached response
+2023-11-10 10:25:59 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 10:25:59 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 10:25:59 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-10 10:25:59 [INFO] Executed in: 0.022397756576538086s
+2023-11-10 10:26:32 [INFO] Question: how much average of gas oil ratio in 2015?
+2023-11-10 10:26:32 [INFO] Running PandasAI with openai LLM...
+2023-11-10 10:26:32 [INFO] Prompt ID: 11a5643c-0d26-4d5a-9560-ef892fc625e4
+2023-11-10 10:26:41 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe to include only rows from 2015
+    df = dfs[0]
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df_2015 = df[df['DATEPRD'].dt.year == 2015]
+    
+    # Calculate the average gas oil ratio for 2015
+    avg_gas_oil_ratio = df_2015['GAS_OIL_RATIO'].mean()
+    
+    # Return the result as a dictionary
+    return {"type": "number", "value": avg_gas_oil_ratio}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 10:26:41 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df_2015 = df[df['DATEPRD'].dt.year == 2015]
+    avg_gas_oil_ratio = df_2015['GAS_OIL_RATIO'].mean()
+    return {'type': 'number', 'value': avg_gas_oil_ratio}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 10:26:41 [INFO] Answer: {'type': 'number', 'value': 150.11520802110405}
+2023-11-10 10:26:41 [INFO] Executed in: 8.992858648300171s
+2023-11-10 10:26:56 [INFO] Question: how much average of gas oil ratio in 2013?
+2023-11-10 10:26:56 [INFO] Running PandasAI with openai LLM...
+2023-11-10 10:26:56 [INFO] Prompt ID: fc06e3a8-d8ba-4edd-a056-286e36aa81d5
+2023-11-10 10:27:04 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    df = dfs[0]
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df['YEAR'] = df['DATEPRD'].dt.year
+    df_2013 = df[df['YEAR'] == 2013]
+    avg_gas_oil_ratio = df_2013['GAS_OIL_RATIO'].mean()
+    
+    return {"type": "number", "value": avg_gas_oil_ratio}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 10:27:04 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df['YEAR'] = df['DATEPRD'].dt.year
+    df_2013 = df[df['YEAR'] == 2013]
+    avg_gas_oil_ratio = df_2013['GAS_OIL_RATIO'].mean()
+    return {'type': 'number', 'value': avg_gas_oil_ratio}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 10:27:04 [INFO] Answer: {'type': 'number', 'value': 158.487906498311}
+2023-11-10 10:27:04 [INFO] Executed in: 8.030441999435425s
+2023-11-10 10:27:45 [INFO] Question: summerize the data
+2023-11-10 10:27:45 [INFO] Running PandasAI with openai LLM...
+2023-11-10 10:27:45 [INFO] Prompt ID: 70cd5249-1bd9-4f58-b78e-dafc931b415c
+2023-11-10 10:27:45 [INFO] Using cached response
+2023-11-10 10:27:45 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 10:27:45 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 10:27:45 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  BORE_OIL_VOL   BORE_GAS_VOL  BORE_WAT_VOL   BORE_WI_VOL
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000   9161.000000    9161.000000   9161.000000   5706.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060   1095.631548  161049.059703   1672.151332   5315.480815
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928   1323.538151  188136.410434   1706.982853   2181.486695
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000      0.000000       0.000000   -457.840000      0.000000
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000    190.690000   29430.590000     19.870000   4338.204674
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969    557.550000   87749.660000   1097.790000   5504.739769
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020   1345.200000  202482.300000   3260.950000   6781.058040
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570   5901.840000  851131.520000   8019.740000  10013.600000}
+2023-11-10 10:27:45 [INFO] Executed in: 0.05557608604431152s
+2023-11-10 10:34:04 [INFO] Question: summerize the data
+2023-11-10 10:34:04 [INFO] Running PandasAI with openai LLM...
+2023-11-10 10:34:04 [INFO] Prompt ID: 71a71940-29b0-4562-b7c7-7056009cefc3
+2023-11-10 10:34:11 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 10:34:11 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 10:34:12 [INFO] Answer: {'type': 'dataframe', 'value':             DEPTH_MD          X_LOC          Y_LOC          Z_LOC           CALI           RDEP             GR           RHOB          NPHI            SP            DTC
+count  125404.000000  125404.000000  125404.000000  118011.000000  125245.000000  118011.000000  125404.000000  100498.000000  84027.000000  89509.000000  124981.000000
+mean     1766.673623      96.207029       5.352328   -1688.791151      13.434357       1.767644      69.518631       2.195091      0.356258     91.863598     123.656446
+std       732.214517       0.087679       0.056982     730.745632       3.503163      13.656606      38.555067       0.238850      0.144595    100.964360      34.175035
+min       415.261599      96.094070       5.267320   -3246.156250       5.946157       0.123068       0.109284       1.366913     -0.023143     -2.199269       7.415132
+25%      1146.662500      96.114060       5.308960   -2266.613282      12.258523       0.787731      42.670250       2.024829      0.234817     48.433949      88.446251
+50%      1742.336798      96.198680       5.336540   -1620.323975      12.789721       1.144292      67.348034       2.157354      0.382366     68.819290     136.637146
+75%      2358.200000      96.301600       5.380580   -1082.805908      15.271458       1.656502      94.683693       2.402259      0.482319     91.356407     147.950012
+max      3272.024000      96.440640       5.445100    -375.251495      25.717396    1856.935059     804.298950       2.985922      0.817310    526.547302     230.432953}
+2023-11-10 10:34:12 [INFO] Executed in: 7.64686131477356s
+2023-11-10 10:39:42 [INFO] Question: summerize this data
+2023-11-10 10:39:42 [INFO] Running PandasAI with openai LLM...
+2023-11-10 10:39:42 [INFO] Prompt ID: 1d30563c-7618-4216-9add-3a36a5d65cc1
+2023-11-10 10:39:48 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 10:39:48 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 10:39:48 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-10 10:39:48 [INFO] Executed in: 6.261244058609009s
+2023-11-10 10:40:08 [INFO] Question: tolong dong, berapa rata-rata gas oil ratio di tahun 2015
+2023-11-10 10:40:08 [INFO] Running PandasAI with openai LLM...
+2023-11-10 10:40:08 [INFO] Prompt ID: 55788e0f-cad8-4c5e-a9c3-fcb25f0f5f49
+2023-11-10 10:40:18 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    # Prepare: Preprocessing and cleaning data if necessary
+    df = dfs[0].copy()
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    
+    # Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    df['YEAR'] = df['DATEPRD'].dt.year
+    
+    # Filter data for the year 2015
+    df_2015 = df[df['YEAR'] == 2015]
+    
+    # Analyze: Conducting the actual analysis
+    avg_gas_oil_ratio = df_2015['GAS_OIL_RATIO'].mean()
+    
+    # Output: return a dictionary
+    result = {
+        "type": "number",
+        "value": avg_gas_oil_ratio
+    }
+    
+    return result
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 10:40:18 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0].copy()
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df['YEAR'] = df['DATEPRD'].dt.year
+    df_2015 = df[df['YEAR'] == 2015]
+    avg_gas_oil_ratio = df_2015['GAS_OIL_RATIO'].mean()
+    result = {'type': 'number', 'value': avg_gas_oil_ratio}
+    return result
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 10:40:18 [INFO] Answer: {'type': 'number', 'value': 150.11520802110405}
+2023-11-10 10:40:18 [INFO] Executed in: 9.944354057312012s
+2023-11-10 11:29:38 [INFO] Question: summerize the data
+2023-11-10 11:29:38 [INFO] Running PandasAI with openai LLM...
+2023-11-10 11:29:38 [INFO] Prompt ID: 1d27e781-f64a-4515-8c74-a49516f04c58
+2023-11-10 11:29:38 [INFO] Using cached response
+2023-11-10 11:29:38 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 11:29:38 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 11:29:38 [INFO] Answer: {'type': 'dataframe', 'value':             DEPTH_MD          X_LOC          Y_LOC          Z_LOC           CALI           RDEP             GR           RHOB          NPHI            SP            DTC
+count  125404.000000  125404.000000  125404.000000  118011.000000  125245.000000  118011.000000  125404.000000  100498.000000  84027.000000  89509.000000  124981.000000
+mean     1766.673623      96.207029       5.352328   -1688.791151      13.434357       1.767644      69.518631       2.195091      0.356258     91.863598     123.656446
+std       732.214517       0.087679       0.056982     730.745632       3.503163      13.656606      38.555067       0.238850      0.144595    100.964360      34.175035
+min       415.261599      96.094070       5.267320   -3246.156250       5.946157       0.123068       0.109284       1.366913     -0.023143     -2.199269       7.415132
+25%      1146.662500      96.114060       5.308960   -2266.613282      12.258523       0.787731      42.670250       2.024829      0.234817     48.433949      88.446251
+50%      1742.336798      96.198680       5.336540   -1620.323975      12.789721       1.144292      67.348034       2.157354      0.382366     68.819290     136.637146
+75%      2358.200000      96.301600       5.380580   -1082.805908      15.271458       1.656502      94.683693       2.402259      0.482319     91.356407     147.950012
+max      3272.024000      96.440640       5.445100    -375.251495      25.717396    1856.935059     804.298950       2.985922      0.817310    526.547302     230.432953}
+2023-11-10 11:29:38 [INFO] Executed in: 0.14616918563842773s
+2023-11-10 15:55:20 [INFO] Question: summerize the data
+2023-11-10 15:55:20 [INFO] Running PandasAI with openai LLM...
+2023-11-10 15:55:20 [INFO] Prompt ID: 4c36df21-ec3d-4375-82fb-4a0169376734
+2023-11-10 15:55:20 [INFO] Using cached response
+2023-11-10 15:55:20 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 15:55:20 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 15:55:20 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  BORE_OIL_VOL   BORE_GAS_VOL  BORE_WAT_VOL   BORE_WI_VOL
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000   9161.000000    9161.000000   9161.000000   5706.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060   1095.631548  161049.059703   1672.151332   5315.480815
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928   1323.538151  188136.410434   1706.982853   2181.486695
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000      0.000000       0.000000   -457.840000      0.000000
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000    190.690000   29430.590000     19.870000   4338.204674
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969    557.550000   87749.660000   1097.790000   5504.739769
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020   1345.200000  202482.300000   3260.950000   6781.058040
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570   5901.840000  851131.520000   8019.740000  10013.600000}
+2023-11-10 15:55:20 [INFO] Executed in: 0.07057070732116699s
+2023-11-10 15:56:25 [INFO] Question: 
+2023-11-10 15:56:25 [INFO] Running PandasAI with openai LLM...
+2023-11-10 15:56:25 [INFO] Prompt ID: dab86991-9528-4257-97ff-81652f0dcc24
+2023-11-10 15:56:37 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    # Prepare: Preprocessing and cleaning data if necessary
+    df = dfs[0].copy()
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df['YEAR'] = df['DATEPRD'].dt.year
+    
+    # Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    grouped_df = df.groupby('YEAR').sum()
+    
+    # Analyze: Conducting the actual analysis
+    max_oil_vol_year = grouped_df['BORE_OIL_VOL'].idxmax()
+    max_oil_vol = grouped_df.loc[max_oil_vol_year, 'BORE_OIL_VOL']
+    
+    # Output: return a dictionary
+    output = {
+        "type": "text",
+        "value": f"The year with the maximum oil volume is {max_oil_vol_year} with a total volume of {max_oil_vol}."
+    }
+    
+    return output
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 15:56:37 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0].copy()
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df['YEAR'] = df['DATEPRD'].dt.year
+    grouped_df = df.groupby('YEAR').sum()
+    max_oil_vol_year = grouped_df['BORE_OIL_VOL'].idxmax()
+    max_oil_vol = grouped_df.loc[max_oil_vol_year, 'BORE_OIL_VOL']
+    output = {'type': 'text', 'value': f'The year with the maximum oil volume is {max_oil_vol_year} with a total volume of {max_oil_vol}.'}
+    return output
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 15:56:37 [WARNING] Error of executing code
+2023-11-10 15:56:37 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-11-10 15:56:37 [INFO] Failed with error: datetime64 type does not support sum operations. Retrying
+2023-11-10 15:58:02 [INFO] Question: summerize the data
+2023-11-10 15:58:02 [INFO] Running PandasAI with openai LLM...
+2023-11-10 15:58:02 [INFO] Prompt ID: ffea3604-ceb3-493f-88cf-43053f383377
+2023-11-10 15:58:02 [INFO] Using cached response
+2023-11-10 15:58:02 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 15:58:02 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 15:58:02 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-10 15:58:02 [INFO] Executed in: 0.024887800216674805s
+2023-11-10 15:58:31 [INFO] Question: 
+2023-11-10 15:58:31 [INFO] Running PandasAI with openai LLM...
+2023-11-10 15:58:31 [INFO] Prompt ID: 20f138d0-37ab-454e-b931-16c92fc9d934
+2023-11-10 15:58:31 [INFO] Using cached response
+2023-11-10 15:58:31 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    # Prepare: Preprocessing and cleaning data if necessary
+    df = dfs[0].copy()
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df['YEAR'] = df['DATEPRD'].dt.year
+    
+    # Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    grouped_df = df.groupby('YEAR').sum()
+    
+    # Analyze: Conducting the actual analysis
+    max_oil_vol_year = grouped_df['BORE_OIL_VOL'].idxmax()
+    max_oil_vol = grouped_df.loc[max_oil_vol_year, 'BORE_OIL_VOL']
+    
+    # Output: return a dictionary
+    output = {
+        "type": "text",
+        "value": f"The year with the maximum oil volume is {max_oil_vol_year} with a total volume of {max_oil_vol}."
+    }
+    
+    return output
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 15:58:31 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0].copy()
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df['YEAR'] = df['DATEPRD'].dt.year
+    grouped_df = df.groupby('YEAR').sum()
+    max_oil_vol_year = grouped_df['BORE_OIL_VOL'].idxmax()
+    max_oil_vol = grouped_df.loc[max_oil_vol_year, 'BORE_OIL_VOL']
+    output = {'type': 'text', 'value': f'The year with the maximum oil volume is {max_oil_vol_year} with a total volume of {max_oil_vol}.'}
+    return output
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 15:58:31 [WARNING] Error of executing code
+2023-11-10 15:58:31 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-11-10 15:58:31 [INFO] Failed with error: datetime64 type does not support sum operations. Retrying
+2023-11-10 15:58:43 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0].copy()
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df['YEAR'] = df['DATEPRD'].dt.year
+    df['BORE_OIL_VOL'] = pd.to_numeric(df['BORE_OIL_VOL'], errors='coerce')
+    grouped_df = df.groupby('YEAR').sum()
+    max_oil_vol_year = grouped_df['BORE_OIL_VOL'].idxmax()
+    max_oil_vol = grouped_df.loc[max_oil_vol_year, 'BORE_OIL_VOL']
+    output = {'type': 'text', 'value': f'The year with the maximum oil volume is {max_oil_vol_year} with a total volume of {max_oil_vol}.'}
+    return output
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 15:58:43 [WARNING] Error of executing code
+2023-11-10 15:58:43 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-11-10 15:58:43 [INFO] Failed with error: datetime64 type does not support sum operations. Retrying
+2023-11-10 15:58:54 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0].copy()
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df['YEAR'] = df['DATEPRD'].dt.year
+    grouped_df = df.groupby('YEAR').sum()
+    max_oil_vol_year = grouped_df['BORE_OIL_VOL'].idxmax()
+    max_oil_vol = grouped_df.loc[max_oil_vol_year, 'BORE_OIL_VOL']
+    output = {'type': 'text', 'value': f'The year with the maximum oil volume is {max_oil_vol_year} with a total volume of {max_oil_vol}.'}
+    return output
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 15:58:54 [WARNING] Error of executing code
+2023-11-10 16:00:05 [INFO] Question: summerize the data
+2023-11-10 16:00:05 [INFO] Running PandasAI with openai LLM...
+2023-11-10 16:00:05 [INFO] Prompt ID: bc4f5631-16d2-4977-bfc8-e797044dd984
+2023-11-10 16:00:05 [INFO] Using cached response
+2023-11-10 16:00:05 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-10 16:00:05 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-10 16:00:05 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-10 16:00:05 [INFO] Executed in: 0.025014162063598633s
+2023-11-13 17:11:41 [INFO] Question: summerize the data
+2023-11-13 17:11:41 [INFO] Running PandasAI with openai LLM...
+2023-11-13 17:11:41 [INFO] Prompt ID: 905b24e2-7c48-41ac-9456-b80c161f2ef2
+2023-11-13 17:11:47 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-13 17:11:47 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-13 17:11:47 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  ...   BORE_WI_VOL  MOVING_AVERAGE  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000  ...   5706.000000     5287.000000         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060  ...   5315.480815     5364.712552         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928  ...   2181.486695     1703.490144         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000  ...      0.000000        0.000000            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000  ...   4338.204674     4432.861892          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969  ...   5504.739769     5267.284627          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020  ...   6781.058040     6453.815093         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570  ...  10013.600000     9148.793872         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-13 17:11:47 [INFO] Executed in: 6.202237367630005s
+2023-11-13 17:12:41 [INFO] Question: summerize the data
+2023-11-13 17:12:41 [INFO] Running PandasAI with openai LLM...
+2023-11-13 17:12:41 [INFO] Prompt ID: 08d859a5-03ff-403f-9e06-85cc831390f1
+2023-11-13 17:12:41 [INFO] Using cached response
+2023-11-13 17:12:41 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-13 17:12:41 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-13 17:12:41 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-13 17:12:41 [INFO] Executed in: 0.020786046981811523s
+2023-11-15 14:55:02 [INFO] Question: what's the average of bore gas volume for Well-N1?
+2023-11-15 14:55:02 [INFO] Running PandasAI with openai LLM...
+2023-11-15 14:55:02 [INFO] Prompt ID: 433f13bd-e050-4245-a459-d36b6121d080
+2023-11-15 14:55:12 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Process
+    # Filter the dataframe for Well-N1
+    df = dfs[0]
+    df_well_n1 = df[df['WELL_BORE_CODE'] == 'Well-N1']
+    
+    # Calculate the average of bore gas volume
+    avg_bore_gas_vol = df_well_n1['BORE_GAS_VOL'].mean()
+    
+    # Output
+    return {"type": "number", "value": avg_bore_gas_vol}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 14:55:12 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    df_well_n1 = df[df['WELL_BORE_CODE'] == 'Well-N1']
+    avg_bore_gas_vol = df_well_n1['BORE_GAS_VOL'].mean()
+    return {'type': 'number', 'value': avg_bore_gas_vol}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 14:55:12 [INFO] Answer: {'type': 'number', 'value': 149622.764472103}
+2023-11-15 14:55:12 [INFO] Executed in: 9.654239654541016s
+2023-11-15 14:59:01 [INFO] Question: summerize the data!
+2023-11-15 14:59:01 [INFO] Running PandasAI with openai LLM...
+2023-11-15 14:59:01 [INFO] Prompt ID: 796a66b4-8531-4dc0-85a8-03b8fc645cb7
+2023-11-15 14:59:11 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    
+    # Prepare: Preprocessing and cleaning data if necessary
+    df = dfs[0].copy()
+    
+    # Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    summary = {
+        'Number of Rows': df.shape[0],
+        'Number of Columns': df.shape[1],
+        'Columns': df.columns.tolist(),
+        'Missing Values': df.isnull().sum().to_dict(),
+        'Data Types': df.dtypes.to_dict()
+    }
+    
+    # Analyze: Conducting the actual analysis
+    result = {
+        'type': 'text',
+        'value': summary
+    }
+    
+    return result
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 14:59:11 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0].copy()
+    summary = {'Number of Rows': df.shape[0], 'Number of Columns': df.shape[1], 'Columns': df.columns.tolist(), 'Missing Values': df.isnull().sum().to_dict(), 'Data Types': df.dtypes.to_dict()}
+    result = {'type': 'text', 'value': summary}
+    return result
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 14:59:11 [INFO] Answer: {'type': 'text', 'value': {'Number of Rows': 15634, 'Number of Columns': 19, 'Columns': ['DATEPRD', 'WELL_BORE_CODE', 'BLOCK', 'ON_STREAM_HRS', 'AVG_DOWNHOLE_PRESSURE', 'AVG_DP_TUBING', 'AVG_WHP_P', 'AVG_WHT_P', 'DP_CHOKE_SIZE', 'BORE_OIL_VOL', 'BORE_GAS_VOL', 'BORE_WAT_VOL', 'BORE_WI_VOL', 'FLOW_KIND', 'MOVING_AVERAGE', 'MOVING_AVERAGE_OIL', 'MOVING_AVERAGE_WI', 'WATER_CUT_DAILY', 'GAS_OIL_RATIO'], 'Missing Values': {'DATEPRD': 0, 'WELL_BORE_CODE': 0, 'BLOCK': 0, 'ON_STREAM_HRS': 285, 'AVG_DOWNHOLE_PRESSURE': 6654, 'AVG_DP_TUBING': 6654, 'AVG_WHP_P': 6479, 'AVG_WHT_P': 6488, 'DP_CHOKE_SIZE': 294, 'BORE_OIL_VOL': 6473, 'BORE_GAS_VOL': 6473, 'BORE_WAT_VOL': 6473, 'BORE_WI_VOL': 9928, 'FLOW_KIND': 0, 'MOVING_AVERAGE': 10347, 'MOVING_AVERAGE_OIL': 6512, 'MOVING_AVERAGE_WI': 10347, 'WATER_CUT_DAILY': 7623, 'GAS_OIL_RATIO': 7626}, 'Data Types': {'DATEPRD': dtype('O'), 'WELL_BORE_CODE': dtype('O'), 'BLOCK': dtype('O'), 'ON_STREAM_HRS': dtype('float64'), 'AVG_DOWNHOLE_PRESSURE': dtype('float64'), 'AVG_DP_TUBING': dtype('float64'), 'AVG_WHP_P': dtype('float64'), 'AVG_WHT_P': dtype('float64'), 'DP_CHOKE_SIZE': dtype('float64'), 'BORE_OIL_VOL': dtype('float64'), 'BORE_GAS_VOL': dtype('float64'), 'BORE_WAT_VOL': dtype('float64'), 'BORE_WI_VOL': dtype('float64'), 'FLOW_KIND': dtype('O'), 'MOVING_AVERAGE': dtype('float64'), 'MOVING_AVERAGE_OIL': dtype('float64'), 'MOVING_AVERAGE_WI': dtype('float64'), 'WATER_CUT_DAILY': dtype('float64'), 'GAS_OIL_RATIO': dtype('float64')}}}
+2023-11-15 14:59:11 [INFO] Executed in: 10.212981462478638s
+2023-11-15 14:59:41 [INFO] Question: summerize the data!
+2023-11-15 14:59:41 [INFO] Running PandasAI with openai LLM...
+2023-11-15 14:59:41 [INFO] Prompt ID: 7510f8f9-599a-4e8a-83ed-2754acd585d9
+2023-11-15 14:59:48 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 14:59:48 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 14:59:48 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-15 14:59:48 [INFO] Executed in: 6.937265157699585s
+2023-11-15 15:01:01 [INFO] Question: summerize the data
+2023-11-15 15:01:01 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:01:01 [INFO] Prompt ID: f027e254-a747-40eb-8ad4-2026b02c3dca
+2023-11-15 15:01:01 [INFO] Using cached response
+2023-11-15 15:01:01 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:01:01 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:01:02 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  ...   BORE_WI_VOL  MOVING_AVERAGE  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000  ...   5706.000000     5287.000000         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060  ...   5315.480815     5364.712552         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928  ...   2181.486695     1703.490144         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000  ...      0.000000        0.000000            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000  ...   4338.204674     4432.861892          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969  ...   5504.739769     5267.284627          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020  ...   6781.058040     6453.815093         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570  ...  10013.600000     9148.793872         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-15 15:01:02 [INFO] Executed in: 0.09859490394592285s
+2023-11-15 15:04:35 [INFO] Question: summerize the data
+2023-11-15 15:04:35 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:04:35 [INFO] Prompt ID: abc4d6d8-2983-4601-a4f6-444a9928f27e
+2023-11-15 15:04:35 [INFO] Using cached response
+2023-11-15 15:04:35 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:04:35 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:04:35 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  ...   BORE_WI_VOL  MOVING_AVERAGE  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000  ...   5706.000000     5287.000000         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060  ...   5315.480815     5364.712552         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928  ...   2181.486695     1703.490144         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000  ...      0.000000        0.000000            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000  ...   4338.204674     4432.861892          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969  ...   5504.739769     5267.284627          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020  ...   6781.058040     6453.815093         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570  ...  10013.600000     9148.793872         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-15 15:04:35 [INFO] Executed in: 0.09651756286621094s
+2023-11-15 15:08:38 [INFO] Question: summerize the data!
+2023-11-15 15:08:38 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:08:38 [INFO] Prompt ID: a47b02ce-b0f3-4d72-b335-829fecf28a49
+2023-11-15 15:08:38 [INFO] Using cached response
+2023-11-15 15:08:38 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    
+    # Prepare: Preprocessing and cleaning data if necessary
+    df = dfs[0].copy()
+    
+    # Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    summary = {
+        'Number of Rows': df.shape[0],
+        'Number of Columns': df.shape[1],
+        'Columns': df.columns.tolist(),
+        'Missing Values': df.isnull().sum().to_dict(),
+        'Data Types': df.dtypes.to_dict()
+    }
+    
+    # Analyze: Conducting the actual analysis
+    result = {
+        'type': 'text',
+        'value': summary
+    }
+    
+    return result
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:08:38 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0].copy()
+    summary = {'Number of Rows': df.shape[0], 'Number of Columns': df.shape[1], 'Columns': df.columns.tolist(), 'Missing Values': df.isnull().sum().to_dict(), 'Data Types': df.dtypes.to_dict()}
+    result = {'type': 'text', 'value': summary}
+    return result
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:08:38 [INFO] Answer: {'type': 'text', 'value': {'Number of Rows': 15634, 'Number of Columns': 19, 'Columns': ['DATEPRD', 'WELL_BORE_CODE', 'BLOCK', 'ON_STREAM_HRS', 'AVG_DOWNHOLE_PRESSURE', 'AVG_DP_TUBING', 'AVG_WHP_P', 'AVG_WHT_P', 'DP_CHOKE_SIZE', 'BORE_OIL_VOL', 'BORE_GAS_VOL', 'BORE_WAT_VOL', 'BORE_WI_VOL', 'FLOW_KIND', 'MOVING_AVERAGE', 'MOVING_AVERAGE_OIL', 'MOVING_AVERAGE_WI', 'WATER_CUT_DAILY', 'GAS_OIL_RATIO'], 'Missing Values': {'DATEPRD': 0, 'WELL_BORE_CODE': 0, 'BLOCK': 0, 'ON_STREAM_HRS': 285, 'AVG_DOWNHOLE_PRESSURE': 6654, 'AVG_DP_TUBING': 6654, 'AVG_WHP_P': 6479, 'AVG_WHT_P': 6488, 'DP_CHOKE_SIZE': 294, 'BORE_OIL_VOL': 6473, 'BORE_GAS_VOL': 6473, 'BORE_WAT_VOL': 6473, 'BORE_WI_VOL': 9928, 'FLOW_KIND': 0, 'MOVING_AVERAGE': 10347, 'MOVING_AVERAGE_OIL': 6512, 'MOVING_AVERAGE_WI': 10347, 'WATER_CUT_DAILY': 7623, 'GAS_OIL_RATIO': 7626}, 'Data Types': {'DATEPRD': dtype('O'), 'WELL_BORE_CODE': dtype('O'), 'BLOCK': dtype('O'), 'ON_STREAM_HRS': dtype('float64'), 'AVG_DOWNHOLE_PRESSURE': dtype('float64'), 'AVG_DP_TUBING': dtype('float64'), 'AVG_WHP_P': dtype('float64'), 'AVG_WHT_P': dtype('float64'), 'DP_CHOKE_SIZE': dtype('float64'), 'BORE_OIL_VOL': dtype('float64'), 'BORE_GAS_VOL': dtype('float64'), 'BORE_WAT_VOL': dtype('float64'), 'BORE_WI_VOL': dtype('float64'), 'FLOW_KIND': dtype('O'), 'MOVING_AVERAGE': dtype('float64'), 'MOVING_AVERAGE_OIL': dtype('float64'), 'MOVING_AVERAGE_WI': dtype('float64'), 'WATER_CUT_DAILY': dtype('float64'), 'GAS_OIL_RATIO': dtype('float64')}}}
+2023-11-15 15:08:38 [INFO] Executed in: 0.012249946594238281s
+2023-11-15 15:09:23 [INFO] Question: summerize the data
+2023-11-15 15:09:23 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:09:23 [INFO] Prompt ID: ed689bd1-4b63-4af3-b061-5f93bcbbd5b8
+2023-11-15 15:09:23 [INFO] Using cached response
+2023-11-15 15:09:23 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:09:23 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:09:23 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-15 15:09:23 [INFO] Executed in: 0.029966354370117188s
+2023-11-15 15:13:19 [INFO] Question: what's the average of oil volume for well-w2
+2023-11-15 15:13:19 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:13:19 [INFO] Prompt ID: 3bc81317-f93c-4ce8-b781-993afba7c1a8
+2023-11-15 15:13:28 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    df = dfs[0]
+    average_oil_volume = df[df['WELL_BORE_CODE'] == 'Well-W2']['BORE_OIL_VOL'].mean()
+    
+    # Output: return a dictionary of type "number" with the average oil volume
+    return {"type": "number", "value": average_oil_volume}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:13:28 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    average_oil_volume = df[df['WELL_BORE_CODE'] == 'Well-W2']['BORE_OIL_VOL'].mean()
+    return {'type': 'number', 'value': average_oil_volume}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:13:28 [INFO] Answer: {'type': 'number', 'value': nan}
+2023-11-15 15:13:28 [INFO] Executed in: 8.815059900283813s
+2023-11-15 15:16:30 [INFO] Question: what's the average of oil volume for well-w2?
+2023-11-15 15:16:30 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:16:30 [INFO] Prompt ID: 72661cc0-25bd-4133-bd49-bd21f88e925f
+2023-11-15 15:16:38 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    df = dfs[0]
+    average_oil_volume = df[df['WELL_BORE_CODE'] == 'Well-W2']['BORE_OIL_VOL'].mean()
+    
+    # Output: return a dictionary of type "number" with the average oil volume
+    return {"type": "number", "value": average_oil_volume}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:16:38 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    average_oil_volume = df[df['WELL_BORE_CODE'] == 'Well-W2']['BORE_OIL_VOL'].mean()
+    return {'type': 'number', 'value': average_oil_volume}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:16:38 [INFO] Answer: {'type': 'number', 'value': nan}
+2023-11-15 15:16:38 [INFO] Executed in: 8.400177001953125s
+2023-11-15 15:16:46 [INFO] Question: what's the average of oil volume for well-w1?
+2023-11-15 15:16:46 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:16:46 [INFO] Prompt ID: 35af0926-719d-4f0d-afb5-809a13ac8cb7
+2023-11-15 15:16:54 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe for well-w1
+    df_well_w1 = dfs[0][dfs[0]['WELL_BORE_CODE'] == 'Well-W1']
+    
+    # Calculate the average oil volume for well-w1
+    avg_oil_volume = df_well_w1['BORE_OIL_VOL'].mean()
+    
+    # Return the result as a dictionary
+    return {"type": "number", "value": avg_oil_volume}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:16:54 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df_well_w1 = dfs[0][dfs[0]['WELL_BORE_CODE'] == 'Well-W1']
+    avg_oil_volume = df_well_w1['BORE_OIL_VOL'].mean()
+    return {'type': 'number', 'value': avg_oil_volume}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:16:54 [INFO] Answer: {'type': 'number', 'value': 1498.5633344240837}
+2023-11-15 15:16:54 [INFO] Executed in: 8.820902109146118s
+2023-11-15 15:18:34 [INFO] Question: what's center-block status currently in?
+2023-11-15 15:18:34 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:18:34 [INFO] Prompt ID: df6dc027-fcff-48b5-8f33-4b56090986af
+2023-11-15 15:18:45 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe to get only the rows with Center-Block
+    center_block_df = dfs[0][dfs[0]['BLOCK'] == 'Center-Block']
+    
+    # Get the latest date
+    latest_date = center_block_df['DATEPRD'].max()
+    
+    # Get the status of Center-Block on the latest date
+    status = center_block_df[center_block_df['DATEPRD'] == latest_date]['FLOW_KIND'].values[0]
+    
+    # Return the result
+    return {"type": "text", "value": f"The status of Center-Block on {latest_date} is {status}."}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:18:45 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    center_block_df = dfs[0][dfs[0]['BLOCK'] == 'Center-Block']
+    latest_date = center_block_df['DATEPRD'].max()
+    status = center_block_df[center_block_df['DATEPRD'] == latest_date]['FLOW_KIND'].values[0]
+    return {'type': 'text', 'value': f'The status of Center-Block on {latest_date} is {status}.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:18:45 [INFO] Answer: {'type': 'text', 'value': 'The status of Center-Block on 2016-09-17T00:00:00 is production.'}
+2023-11-15 15:18:45 [INFO] Executed in: 10.483628511428833s
+2023-11-15 15:19:51 [INFO] Question: what's center-block sq_km currently on?
+2023-11-15 15:19:51 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:19:51 [INFO] Prompt ID: 6393d4b8-1c12-4a2c-b3b4-7b7d8172e0b4
+2023-11-15 15:20:00 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe to get only the rows with CENTER-BLOCK
+    center_block_df = dfs[0][dfs[0]['BLOCK'] == 'Center-Block']
+    
+    # Get the unique values of the column BLOCK
+    center_block_sq_km = center_block_df['BLOCK'].unique()[0]
+    
+    # Return the result
+    return {"type": "text", "value": f"The sq_km of Center-Block is {center_block_sq_km}."}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:20:00 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    center_block_df = dfs[0][dfs[0]['BLOCK'] == 'Center-Block']
+    center_block_sq_km = center_block_df['BLOCK'].unique()[0]
+    return {'type': 'text', 'value': f'The sq_km of Center-Block is {center_block_sq_km}.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:20:00 [INFO] Answer: {'type': 'text', 'value': 'The sq_km of Center-Block is Center-Block.'}
+2023-11-15 15:20:00 [INFO] Executed in: 8.83220362663269s
+2023-11-15 15:24:48 [INFO] Question: make description about well-c1
+2023-11-15 15:24:48 [INFO] Running PandasAI with openai LLM...
+2023-11-15 15:24:48 [INFO] Prompt ID: ebcf444c-6582-48b9-801f-32a3066b48eb
+2023-11-15 15:24:57 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe to get data for well-C1
+    well_c1_data = dfs[0][dfs[0]['WELL_BORE_CODE'] == 'Well-C1']
+    
+    # Get the description of well-C1
+    well_c1_description = well_c1_data.describe()
+    
+    # Convert the description to a string
+    well_c1_description_str = well_c1_description.to_string()
+    
+    # Return the description as text
+    return {"type": "text", "value": well_c1_description_str}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 15:24:57 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    well_c1_data = dfs[0][dfs[0]['WELL_BORE_CODE'] == 'Well-C1']
+    well_c1_description = well_c1_data.describe()
+    return {'type': 'text', 'value': well_c1_description_str}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 15:24:57 [WARNING] Error of executing code
+2023-11-15 15:24:57 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-11-15 15:24:57 [INFO] Failed with error: name 'well_c1_description_str' is not defined. Retrying
+2023-11-15 17:58:33 [INFO] Question: summerize the data
+2023-11-15 17:58:33 [INFO] Running PandasAI with openai LLM...
+2023-11-15 17:58:33 [INFO] Prompt ID: 82d973df-b362-4b7e-9848-c82cefc9bdb9
+2023-11-15 17:58:33 [INFO] Using cached response
+2023-11-15 17:58:33 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 17:58:33 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 17:58:33 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  ...   BORE_WI_VOL  MOVING_AVERAGE  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000  ...   5706.000000     5287.000000         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060  ...   5315.480815     5364.712552         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928  ...   2181.486695     1703.490144         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000  ...      0.000000        0.000000            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000  ...   4338.204674     4432.861892          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969  ...   5504.739769     5267.284627          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020  ...   6781.058040     6453.815093         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570  ...  10013.600000     9148.793872         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-15 17:58:33 [INFO] Executed in: 0.1426541805267334s
+2023-11-15 17:58:40 [INFO] Question: summerize the data
+2023-11-15 17:58:40 [INFO] Running PandasAI with openai LLM...
+2023-11-15 17:58:40 [INFO] Prompt ID: 98c29414-33c1-41c4-9b24-e4fd643f2321
+2023-11-15 17:58:40 [INFO] Using cached response
+2023-11-15 17:58:40 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 17:58:40 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 17:58:40 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  ...   BORE_WI_VOL  MOVING_AVERAGE  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000  ...   5706.000000     5287.000000         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060  ...   5315.480815     5364.712552         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928  ...   2181.486695     1703.490144         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000  ...      0.000000        0.000000            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000  ...   4338.204674     4432.861892          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969  ...   5504.739769     5267.284627          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020  ...   6781.058040     6453.815093         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570  ...  10013.600000     9148.793872         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-15 17:58:40 [INFO] Executed in: 0.1064763069152832s
+2023-11-15 18:04:17 [INFO] Question: summerize the data
+2023-11-15 18:04:17 [INFO] Running PandasAI with openai LLM...
+2023-11-15 18:04:17 [INFO] Prompt ID: e129f71a-3739-4df5-bb6a-faa9dc6bf0d0
+2023-11-15 18:04:17 [INFO] Using cached response
+2023-11-15 18:04:17 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 18:04:17 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 18:04:17 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  ...   BORE_WI_VOL  MOVING_AVERAGE  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000  ...   5706.000000     5287.000000         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060  ...   5315.480815     5364.712552         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928  ...   2181.486695     1703.490144         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000  ...      0.000000        0.000000            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000  ...   4338.204674     4432.861892          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969  ...   5504.739769     5267.284627          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020  ...   6781.058040     6453.815093         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570  ...  10013.600000     9148.793872         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-15 18:04:17 [INFO] Executed in: 0.0839834213256836s
+2023-11-15 18:04:45 [INFO] Question: summerize the data
+2023-11-15 18:04:45 [INFO] Running PandasAI with openai LLM...
+2023-11-15 18:04:45 [INFO] Prompt ID: 8f8b9250-0dee-445f-9a97-bead1d9a6450
+2023-11-15 18:04:45 [INFO] Using cached response
+2023-11-15 18:04:45 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 18:04:45 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 18:04:46 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  ...   BORE_WI_VOL  MOVING_AVERAGE  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000  ...   5706.000000     5287.000000         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060  ...   5315.480815     5364.712552         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928  ...   2181.486695     1703.490144         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000  ...      0.000000        0.000000            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000  ...   4338.204674     4432.861892          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969  ...   5504.739769     5267.284627          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020  ...   6781.058040     6453.815093         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570  ...  10013.600000     9148.793872         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-15 18:04:46 [INFO] Executed in: 0.06214451789855957s
+2023-11-15 18:10:46 [INFO] Question: please summerize the code
+2023-11-15 18:10:46 [INFO] Running PandasAI with openai LLM...
+2023-11-15 18:10:46 [INFO] Prompt ID: 8b1ba422-75f7-4795-a670-55fd333d1179
+2023-11-15 18:10:57 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Prepare: No preprocessing or cleaning needed
+    
+    # Process: No data manipulation needed
+    
+    # Analyze: Summarize the code
+    code_summary = "The code performs the following steps:\n"
+    code_summary += "1. Prepare: No preprocessing or cleaning needed.\n"
+    code_summary += "2. Process: No data manipulation needed.\n"
+    code_summary += "3. Analyze: The code summarizes the provided dataframes.\n"
+    code_summary += "4. Output: Returns a dictionary with the code summary."
+    
+    # Output: Return the code summary
+    return {"type": "text", "value": code_summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-15 18:10:57 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    code_summary = 'The code performs the following steps:\n'
+    code_summary += '1. Prepare: No preprocessing or cleaning needed.\n'
+    code_summary += '2. Process: No data manipulation needed.\n'
+    code_summary += '3. Analyze: The code summarizes the provided dataframes.\n'
+    code_summary += '4. Output: Returns a dictionary with the code summary.'
+    return {'type': 'text', 'value': code_summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-15 18:10:57 [INFO] Answer: {'type': 'text', 'value': 'The code performs the following steps:\n1. Prepare: No preprocessing or cleaning needed.\n2. Process: No data manipulation needed.\n3. Analyze: The code summarizes the provided dataframes.\n4. Output: Returns a dictionary with the code summary.'}
+2023-11-15 18:10:57 [INFO] Executed in: 11.1938955783844s
+2023-11-16 10:33:57 [INFO] Question: summerize the data
+2023-11-16 10:33:57 [INFO] Running PandasAI with openai LLM...
+2023-11-16 10:33:57 [INFO] Prompt ID: ee8a1eba-5c4b-4bce-96ce-b328c73c7aa5
+2023-11-16 10:33:57 [INFO] Using cached response
+2023-11-16 10:33:57 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-16 10:33:57 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-16 10:33:57 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  ...   BORE_WI_VOL  MOVING_AVERAGE  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000  ...   5706.000000     5287.000000         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060  ...   5315.480815     5364.712552         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928  ...   2181.486695     1703.490144         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000  ...      0.000000        0.000000            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000  ...   4338.204674     4432.861892          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969  ...   5504.739769     5267.284627          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020  ...   6781.058040     6453.815093         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570  ...  10013.600000     9148.793872         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-16 10:33:57 [INFO] Executed in: 0.10030484199523926s
+2023-11-16 10:34:20 [INFO] Question: summerize the data
+2023-11-16 10:34:20 [INFO] Running PandasAI with openai LLM...
+2023-11-16 10:34:20 [INFO] Prompt ID: 2aa38bc2-faa4-4800-ae9f-0692c7b0d415
+2023-11-16 10:34:20 [INFO] Using cached response
+2023-11-16 10:34:20 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-16 10:34:20 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-16 10:34:20 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P    AVG_WHT_P  DP_CHOKE_SIZE  ...   BORE_WI_VOL  MOVING_AVERAGE  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  9146.000000   15340.000000  ...   5706.000000     5287.000000         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811    67.728440      11.441060  ...   5315.480815     5364.712552         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631    27.719028      19.816928  ...   2181.486695     1703.490144         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000     0.000000       0.000000  ...      0.000000        0.000000            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062    56.577834       0.000000  ...   4338.204674     4432.861892          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620    80.071250       2.384969  ...   5504.739769     5267.284627          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268    88.062202      13.765020  ...   6781.058040     6453.815093         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030    93.509584     125.718570  ...  10013.600000     9148.793872         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-16 10:34:20 [INFO] Executed in: 0.08667898178100586s
+2023-11-16 10:46:33 [INFO] Question: summerize the data
+2023-11-16 10:46:33 [INFO] Running PandasAI with openai LLM...
+2023-11-16 10:46:33 [INFO] Prompt ID: a68548e8-667b-483b-9811-f82153e0a32f
+2023-11-16 10:46:33 [INFO] Using cached response
+2023-11-16 10:46:33 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-16 10:46:33 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-16 10:46:33 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-16 10:46:33 [INFO] Executed in: 0.012725591659545898s
+2023-11-16 15:52:40 [INFO] Question: which block that has the highest oil volume in total?
+2023-11-16 15:52:40 [INFO] Running PandasAI with openai LLM...
+2023-11-16 15:52:40 [INFO] Prompt ID: 74a126f7-fea5-4754-be74-59bd31e5e4ed
+2023-11-16 15:52:49 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Process
+    # Group the data by block and calculate the sum of oil volume
+    block_oil_volume = dfs[0].groupby('BLOCK')['BORE_OIL_VOL'].sum()
+    
+    # Find the block with the highest oil volume
+    max_oil_volume_block = block_oil_volume.idxmax()
+    
+    # Output
+    return {"type": "text", "value": f"The block that has the highest oil volume in total is {max_oil_volume_block}."}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-16 15:52:49 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    block_oil_volume = dfs[0].groupby('BLOCK')['BORE_OIL_VOL'].sum()
+    max_oil_volume_block = block_oil_volume.idxmax()
+    return {'type': 'text', 'value': f'The block that has the highest oil volume in total is {max_oil_volume_block}.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-16 15:52:49 [INFO] Answer: {'type': 'text', 'value': 'The block that has the highest oil volume in total is Andaman III.'}
+2023-11-16 15:52:49 [INFO] Executed in: 9.4217209815979s
+2023-11-16 15:52:49 [INFO] 127.0.0.1 - - [16/Nov/2023 15:52:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:53:00 [INFO] 127.0.0.1 - - [16/Nov/2023 15:53:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 15:53:16 [INFO] Question: what about water volume?
+2023-11-16 15:53:16 [INFO] Running PandasAI with openai LLM...
+2023-11-16 15:53:16 [INFO] Prompt ID: 4b722523-dc37-4e66-a36c-be07d329b578
+2023-11-16 15:53:24 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    water_volume = dfs[0]['BORE_WAT_VOL']
+    avg_water_volume = water_volume.mean()
+    
+    return {"type": "number", "value": avg_water_volume}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-16 15:53:24 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    water_volume = dfs[0]['BORE_WAT_VOL']
+    avg_water_volume = water_volume.mean()
+    return {'type': 'number', 'value': avg_water_volume}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-16 15:53:24 [INFO] Answer: {'type': 'number', 'value': 1672.1513317323438}
+2023-11-16 15:53:24 [INFO] Executed in: 8.2090585231781s
+2023-11-16 15:53:24 [INFO] 127.0.0.1 - - [16/Nov/2023 15:53:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:54:00 [INFO] 127.0.0.1 - - [16/Nov/2023 15:54:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 15:54:09 [INFO] Question: summerize the andaman III block
+2023-11-16 15:54:09 [INFO] Running PandasAI with openai LLM...
+2023-11-16 15:54:09 [INFO] Prompt ID: 0e37f241-dea2-4de7-91f3-34323352eb6f
+2023-11-16 15:54:20 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe for the Andaman III block
+    andaman_III_df = dfs[0][dfs[0]['BLOCK'] == 'Andaman III']
+    
+    # Summarize the Andaman III block
+    summary = andaman_III_df.describe()
+    
+    # Convert the summary dataframe to a string
+    summary_str = summary.to_string()
+    
+    # Return the summary as text
+    return {"type": "text", "value": summary_str}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-16 15:54:20 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    andaman_III_df = dfs[0][dfs[0]['BLOCK'] == 'Andaman III']
+    summary = andaman_III_df.describe()
+    return {'type': 'text', 'value': summary_str}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-16 15:54:20 [WARNING] Error of executing code
+2023-11-16 15:54:20 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-11-16 15:54:20 [INFO] Failed with error: name 'summary_str' is not defined. Retrying
+2023-11-16 15:54:29 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    andaman_III_df = dfs[0][dfs[0]['BLOCK'] == 'Andaman III']
+    summary = andaman_III_df.describe()
+    return {'type': 'text', 'value': summary_str}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-16 15:54:29 [WARNING] Error of executing code
+2023-11-16 15:54:29 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-11-16 15:54:29 [INFO] Failed with error: name 'summary_str' is not defined. Retrying
+2023-11-16 15:54:38 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    andaman_III_df = dfs[0][dfs[0]['BLOCK'] == 'Andaman III']
+    summary = andaman_III_df.describe()
+    return {'type': 'text', 'value': summary_str}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-16 15:54:38 [WARNING] Error of executing code
+2023-11-16 15:54:38 [INFO] 127.0.0.1 - - [16/Nov/2023 15:54:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:55:00 [INFO] 127.0.0.1 - - [16/Nov/2023 15:55:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 15:55:38 [INFO] 127.0.0.1 - - [16/Nov/2023 15:55:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:56:00 [INFO] 127.0.0.1 - - [16/Nov/2023 15:56:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 15:56:38 [INFO] 127.0.0.1 - - [16/Nov/2023 15:56:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:57:00 [INFO] 127.0.0.1 - - [16/Nov/2023 15:57:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 15:57:47 [INFO] 127.0.0.1 - - [16/Nov/2023 15:57:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:57:47 [INFO] 127.0.0.1 - - [16/Nov/2023 15:57:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:57:47 [INFO] 127.0.0.1 - - [16/Nov/2023 15:57:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:57:53 [INFO] 127.0.0.1 - - [16/Nov/2023 15:57:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:57:53 [INFO] 127.0.0.1 - - [16/Nov/2023 15:57:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:57:53 [INFO] 127.0.0.1 - - [16/Nov/2023 15:57:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:58:00 [INFO] 127.0.0.1 - - [16/Nov/2023 15:58:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 15:58:08 [INFO] 127.0.0.1 - - [16/Nov/2023 15:58:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:58:08 [INFO] 127.0.0.1 - - [16/Nov/2023 15:58:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:58:09 [INFO] 127.0.0.1 - - [16/Nov/2023 15:58:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:58:24 [INFO] 127.0.0.1 - - [16/Nov/2023 15:58:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 15:59:00 [INFO] 127.0.0.1 - - [16/Nov/2023 15:59:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 15:59:54 [INFO] 127.0.0.1 - - [16/Nov/2023 15:59:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 16:00:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:00:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:01:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:01:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:02:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:02:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:03:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:03:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:04:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:04:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:05:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:05:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:06:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:06:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:07:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:07:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:08:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:08:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:09:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:09:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:10:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:10:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:11:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:11:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:12:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:12:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:13:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:13:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:14:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:14:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:15:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:15:00] "GET /_reload-hash HTTP/1.1" 200 -
+2023-11-16 16:15:55 [INFO] 127.0.0.1 - - [16/Nov/2023 16:15:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-16 16:16:00 [INFO] 127.0.0.1 - - [16/Nov/2023 16:16:00] "GET /_reload-hash HTTP/1.1" 200 -
