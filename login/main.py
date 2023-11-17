@@ -11,6 +11,7 @@ app = Dash(
     ],
 )
 
+app.title = 'Know AI'
 
 app.layout = dmc.Center(
     style={
@@ -26,7 +27,7 @@ app.layout = dmc.Center(
                     [
                         dmc.Title("Welcome to", order=4, align="center"),
                         # html.Br(),
-                        dmc.Title("WAVIV Knowledge Navigator!", order=2, align="center"),
+                        dmc.Title("Know AI", order=2, align="center"),
                             dmc.Text(
                                 "login with:",
                                 # variant="dashed",
@@ -130,4 +131,4 @@ app.layout = dmc.Center(
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=7654)
+    app.run_server(debug=False, port=7654)

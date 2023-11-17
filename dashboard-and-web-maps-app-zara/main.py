@@ -24,7 +24,7 @@ def main() -> None:
     app = Dash(__name__, prevent_initial_callbacks='initial_duplicate', suppress_callback_exceptions=True, meta_tags=[
         {"name": "viewport", "content": "width=device-width, initial-scale=1.0"}
     ])
-    app.title = "Dashboard Aceh (Dummy)"
+    app.title = "Know AI"
     app.layout = create_layout(app, data)
     app.run_server(debug=False, port = 8000)
 

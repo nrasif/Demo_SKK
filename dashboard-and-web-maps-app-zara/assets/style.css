@@ -107,9 +107,9 @@ body {
     padding: 10px;
     /* margin-right: 20px 80px 80px; */
 }
-.overview-to-date-picker-wrapper{
+/* .overview-to-date-picker-wrapper{
     margin-left: 20px;
-}
+} */
 
 #from-datepicker-layout-overview, #to-datepicker-layout-overview{
     display: inline-table;
@@ -199,9 +199,9 @@ body {
     margin: 20px 80px 80px ;
 }
 
-.ppd-to-date-picker-wrapper{
+/* .ppd-to-date-picker-wrapper{
     margin-left: 20px;
-}
+} */
 
 .ppd-sc-group-left-grid{
     display: inline-block;
