@@ -2948,3 +2948,112 @@ result = analyze_data(dfs)
         ```
 2023-11-17 11:36:01 [INFO] Answer: {'type': 'text', 'value': 'The well with the highest oil volume is Well-W1 on 2009-01-08 00:00:00.'}
 2023-11-17 11:36:01 [INFO] Executed in: 10.224292278289795s
+2023-11-17 16:35:38 [INFO] Question: hey, can you summerize the data for me?
+2023-11-17 16:35:38 [INFO] Running PandasAI with openai LLM...
+2023-11-17 16:35:38 [INFO] Prompt ID: 0269c40b-1e01-4a0f-94b4-131e4b220513
+2023-11-17 16:35:45 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-17 16:35:45 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-17 16:35:45 [INFO] Answer: {'type': 'dataframe', 'value':        GAS_OIL_RATIO  WATER_CUT_DAILY
+count    3292.000000      3305.000000
+mean      151.449625         2.140738
+std        30.693551         2.031241
+min        18.844786        -2.620707
+25%       142.965017         0.653084
+50%       150.611885         1.902813
+75%       156.271564         3.500064
+max      1110.185309        51.125411}
+2023-11-17 16:35:45 [INFO] Executed in: 6.6971118450164795s
+2023-11-17 16:35:45 [INFO] 127.0.0.1 - - [17/Nov/2023 16:35:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:36:03 [INFO] 127.0.0.1 - - [17/Nov/2023 16:36:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:36:04 [INFO] 127.0.0.1 - - [17/Nov/2023 16:36:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:36:04 [INFO] 127.0.0.1 - - [17/Nov/2023 16:36:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:36:56 [INFO] 127.0.0.1 - - [17/Nov/2023 16:36:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:20 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:39 [INFO] Question: how many block in this data? also mention their name
+2023-11-17 16:37:39 [INFO] Running PandasAI with openai LLM...
+2023-11-17 16:37:39 [INFO] Prompt ID: 612ed3ce-7cb7-4cdd-a671-f81b61bb1f20
+2023-11-17 16:37:39 [INFO] error_code=invalid_api_key error_message='Incorrect API key provided: sk-TUzyg***************************************PWLo. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2023-11-17 16:37:39 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:51 [INFO] Question: how many block in this data? also mention their name
+2023-11-17 16:37:51 [INFO] Running PandasAI with openai LLM...
+2023-11-17 16:37:51 [INFO] Prompt ID: 70033f7e-093b-404e-b63f-e6c7da2d5ff3
+2023-11-17 16:37:52 [INFO] error_code=invalid_api_key error_message='Incorrect API key provided: sk-TUzyg***************************************PWLo. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2023-11-17 16:37:52 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "GET / HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "[36mGET /assets/style.css?m=1700195501.8894563 HTTP/1.1[0m" 304 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "GET /_dash-layout HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "GET /_dash-dependencies HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "GET /_favicon.ico?v=2.13.0 HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "[36mGET /assets/waviv_logo.jpg HTTP/1.1[0m" 304 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 204 -
+2023-11-17 16:37:54 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:55 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:55 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:55 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:55 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:55 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:55 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:55 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:55 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:56 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:56 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:56] "[36mGET /_dash-component-suites/dash_leaflet/async-GeoJSON.js HTTP/1.1[0m" 304 -
+2023-11-17 16:37:56 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:56] "[36mGET /_dash-component-suites/dash_leaflet/async-MeasureControl.js HTTP/1.1[0m" 304 -
+2023-11-17 16:37:56 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:56 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:56] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2023-11-17 16:37:56 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:56] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2023-11-17 16:37:56 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:57 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:57 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:37:57 [INFO] 127.0.0.1 - - [17/Nov/2023 16:37:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:38:10 [INFO] 127.0.0.1 - - [17/Nov/2023 16:38:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:38:10 [INFO] 127.0.0.1 - - [17/Nov/2023 16:38:10] "[36mGET /_dash-component-suites/dash_ag_grid/async-community.js HTTP/1.1[0m" 304 -
+2023-11-17 16:38:12 [INFO] 127.0.0.1 - - [17/Nov/2023 16:38:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:38:13 [INFO] 127.0.0.1 - - [17/Nov/2023 16:38:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:38:13 [INFO] 127.0.0.1 - - [17/Nov/2023 16:38:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:38:19 [INFO] 127.0.0.1 - - [17/Nov/2023 16:38:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:38:44 [INFO] 127.0.0.1 - - [17/Nov/2023 16:38:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:39:52 [INFO] 127.0.0.1 - - [17/Nov/2023 16:39:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:40:06 [INFO] 127.0.0.1 - - [17/Nov/2023 16:40:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:40:25 [INFO] Question: How many blocks are there in the data? also please mention their name
+2023-11-17 16:40:25 [INFO] Running PandasAI with openai LLM...
+2023-11-17 16:40:25 [INFO] Prompt ID: eb0a1ccc-2ce3-4f83-9046-34f8a98af302
+2023-11-17 16:40:26 [INFO] error_code=invalid_api_key error_message='Incorrect API key provided: sk-TUzyg***************************************PWLo. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2023-11-17 16:40:26 [INFO] 127.0.0.1 - - [17/Nov/2023 16:40:26] "POST /_dash-update-component HTTP/1.1" 200 -

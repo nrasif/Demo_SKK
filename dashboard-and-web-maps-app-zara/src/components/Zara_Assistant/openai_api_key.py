@@ -1,1 +1,0 @@
-KEY = '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'
