@@ -4,7 +4,7 @@ from dash_iconify import DashIconify
 
 from ...data.source import DataSource
 from ...components import ids, cns
-from .... import openai_api_key
+from ..Zara_Assistant import openai_api_key
 
 import pandas as pd
 import time
