@@ -3057,3 +3057,408 @@ max      1110.185309        51.125411}
 2023-11-17 16:40:25 [INFO] Prompt ID: eb0a1ccc-2ce3-4f83-9046-34f8a98af302
 2023-11-17 16:40:26 [INFO] error_code=invalid_api_key error_message='Incorrect API key provided: sk-TUzyg***************************************PWLo. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
 2023-11-17 16:40:26 [INFO] 127.0.0.1 - - [17/Nov/2023 16:40:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:54:31 [INFO] Question: mention kind of well bore code
+2023-11-17 16:54:31 [INFO] Running PandasAI with openai LLM...
+2023-11-17 16:54:31 [INFO] Prompt ID: 43dba367-383f-4340-a3cd-31dfcbca72a5
+2023-11-17 16:54:41 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe based on the well bore code
+    filtered_df = dfs[0][dfs[0]['WELL_BORE_CODE'] == 'Well-C1']
+    
+    # Calculate the average downhole pressure
+    avg_downhole_pressure = filtered_df['AVG_DOWNHOLE_PRESSURE'].mean()
+    
+    # Calculate the average water cut daily
+    avg_water_cut_daily = filtered_df['WATER_CUT_DAILY'].mean()
+    
+    # Prepare the output text
+    output_text = f"The average downhole pressure for well bore code 'Well-C1' is {avg_downhole_pressure:.2f} and the average water cut daily is {avg_water_cut_daily:.2f}."
+    
+    # Return the output as a dictionary
+    return {"type": "text", "value": output_text}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-17 16:54:41 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    filtered_df = dfs[0][dfs[0]['WELL_BORE_CODE'] == 'Well-C1']
+    avg_downhole_pressure = filtered_df['AVG_DOWNHOLE_PRESSURE'].mean()
+    avg_water_cut_daily = filtered_df['WATER_CUT_DAILY'].mean()
+    output_text = f"The average downhole pressure for well bore code 'Well-C1' is {avg_downhole_pressure:.2f} and the average water cut daily is {avg_water_cut_daily:.2f}."
+    return {'type': 'text', 'value': output_text}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-17 16:54:41 [INFO] Answer: {'type': 'text', 'value': "The average downhole pressure for well bore code 'Well-C1' is 233.07 and the average water cut daily is 3.69."}
+2023-11-17 16:54:41 [INFO] Executed in: 10.215697526931763s
+2023-11-17 16:54:41 [INFO] 127.0.0.1 - - [17/Nov/2023 16:54:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 16:54:59 [INFO] 127.0.0.1 - - [17/Nov/2023 16:54:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:02:04 [INFO] Question: How many blocks are there in this data? also please mention their name
+2023-11-17 17:02:04 [INFO] Running PandasAI with openai LLM...
+2023-11-17 17:02:04 [INFO] Prompt ID: 2abaf448-9f76-4aae-9c14-2ebfe540a204
+2023-11-17 17:02:13 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Get the unique blocks from the dataframe
+    blocks = dfs[0]['BLOCK'].unique()
+    
+    # Count the number of blocks
+    num_blocks = len(blocks)
+    
+    # Prepare the output text
+    output_text = f"There are {num_blocks} blocks in this data. They are: {', '.join(blocks)}"
+    
+    # Return the output as text
+    return {"type": "text", "value": output_text}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-17 17:02:13 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    blocks = dfs[0]['BLOCK'].unique()
+    num_blocks = len(blocks)
+    output_text = f"There are {num_blocks} blocks in this data. They are: {', '.join(blocks)}"
+    return {'type': 'text', 'value': output_text}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-17 17:02:13 [INFO] Answer: {'type': 'text', 'value': 'There are 5 blocks in this data. They are: South Andaman, North Sumatera Offshore, Andaman I-II, Lhokseumawe, Andaman III'}
+2023-11-17 17:02:13 [INFO] Executed in: 8.903543949127197s
+2023-11-17 17:02:13 [INFO] 127.0.0.1 - - [17/Nov/2023 17:02:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:03:29 [INFO] 127.0.0.1 - - [17/Nov/2023 17:03:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:04:11 [INFO] 127.0.0.1 - - [17/Nov/2023 17:04:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:04:47 [INFO] 127.0.0.1 - - [17/Nov/2023 17:04:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:05:01 [INFO] 127.0.0.1 - - [17/Nov/2023 17:05:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:05:26 [INFO] Question: Thanks! I want to know which block that has the highest total oil volume
+2023-11-17 17:05:26 [INFO] Running PandasAI with openai LLM...
+2023-11-17 17:05:26 [INFO] Prompt ID: 41ea8bf9-2fcb-4731-a890-6c624292dc8c
+2023-11-17 17:05:35 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Process
+    # Group by block and calculate the sum of oil volume
+    block_oil_volume = dfs[0].groupby('BLOCK')['BORE_OIL_VOL'].sum()
+    
+    # Find the block with the highest total oil volume
+    max_oil_volume_block = block_oil_volume.idxmax()
+    
+    # Output
+    return {"type": "text", "value": f"The block with the highest total oil volume is {max_oil_volume_block}."}
+
+# Declare a result variable
+result = analyze_data(dfs)
+result
+                    ```
+                
+2023-11-17 17:05:35 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    block_oil_volume = dfs[0].groupby('BLOCK')['BORE_OIL_VOL'].sum()
+    max_oil_volume_block = block_oil_volume.idxmax()
+    return {'type': 'text', 'value': f'The block with the highest total oil volume is {max_oil_volume_block}.'}
+
+
+result = analyze_data(dfs)
+result
+        ```
+2023-11-17 17:05:35 [INFO] Answer: {'type': 'text', 'value': 'The block with the highest total oil volume is Andaman III.'}
+2023-11-17 17:05:35 [INFO] Executed in: 9.39139699935913s
+2023-11-17 17:05:35 [INFO] 127.0.0.1 - - [17/Nov/2023 17:05:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:06:02 [INFO] 127.0.0.1 - - [17/Nov/2023 17:06:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:07:00 [INFO] 127.0.0.1 - - [17/Nov/2023 17:07:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:07:21 [INFO] 127.0.0.1 - - [17/Nov/2023 17:07:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:08:06 [INFO] 127.0.0.1 - - [17/Nov/2023 17:08:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:10:01 [INFO] 127.0.0.1 - - [17/Nov/2023 17:10:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:10:49 [INFO] 127.0.0.1 - - [17/Nov/2023 17:10:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:11:25 [INFO] Question: Alright, that's cool! Can you summerize the data for me?
+2023-11-17 17:11:25 [INFO] Running PandasAI with openai LLM...
+2023-11-17 17:11:25 [INFO] Prompt ID: 29a5f9e2-6c56-4895-a912-cb5bcf48e992
+2023-11-17 17:11:32 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-17 17:11:32 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-17 17:11:32 [INFO] Answer: {'type': 'dataframe', 'value':        ON_STREAM_HRS  AVG_DOWNHOLE_PRESSURE  AVG_DP_TUBING    AVG_WHP_P  ...  MOVING_AVERAGE_OIL  MOVING_AVERAGE_WI  WATER_CUT_DAILY  GAS_OIL_RATIO
+count   15349.000000            8980.000000    8980.000000  9155.000000  ...         9122.000000        5287.000000      8011.000000    8008.000000
+mean       19.994093             181.803869     154.028787    45.377811  ...         1099.791728        5364.712552         2.685615     151.960542
+std         8.369978             109.712363      76.752373    24.752631  ...         1263.967711        1703.490144         3.892497      16.449967
+min         0.000000               0.000000       0.000000     0.000000  ...            0.000000           0.000000        -3.722733      18.536118
+25%        24.000000               0.000000      83.665361    31.148062  ...          206.058929        4432.861892         0.128310     145.826418
+50%        24.000000             232.896939     175.588861    37.933620  ...          586.795714        5267.284627         1.144023     151.429372
+75%        24.000000             255.401455     204.319964    57.101268  ...         1400.517679        6453.815093         3.439927     156.810801
+max        25.000000             397.588550     345.906770   137.311030  ...         5576.209286        9148.793872        57.797619    1110.185309
+
+[8 rows x 15 columns]}
+2023-11-17 17:11:32 [INFO] Executed in: 7.322990417480469s
+2023-11-17 17:11:32 [INFO] 127.0.0.1 - - [17/Nov/2023 17:11:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:15:09 [INFO] 127.0.0.1 - - [17/Nov/2023 17:15:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:15:49 [INFO] Question: Which well that has the highest oil volume? also please mention its date
+2023-11-17 17:15:49 [INFO] Running PandasAI with openai LLM...
+2023-11-17 17:15:49 [INFO] Prompt ID: 8d833556-af49-4421-8d5f-a2bdd5b64530
+2023-11-17 17:16:01 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Combine all dataframes into one
+    df = pd.concat(dfs)
+    
+    # Convert DATEPRD column to datetime
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    
+    # Filter rows where BORE_OIL_VOL is not null
+    df_filtered = df[df['BORE_OIL_VOL'].notnull()]
+    
+    # Find the well with the highest oil volume
+    max_oil_vol = df_filtered['BORE_OIL_VOL'].max()
+    max_oil_vol_well = df_filtered[df_filtered['BORE_OIL_VOL'] == max_oil_vol]['WELL_BORE_CODE'].iloc[0]
+    max_oil_vol_date = df_filtered[df_filtered['BORE_OIL_VOL'] == max_oil_vol]['DATEPRD'].iloc[0]
+    
+    # Format the result
+    result_text = f"The well with the highest oil volume is {max_oil_vol_well} on {max_oil_vol_date.strftime('%Y-%m-%d')}."
+    
+    # Return the result
+    return {"type": "text", "value": result_text}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-17 17:16:01 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = pd.concat(dfs)
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df_filtered = df[df['BORE_OIL_VOL'].notnull()]
+    max_oil_vol = df_filtered['BORE_OIL_VOL'].max()
+    max_oil_vol_well = df_filtered[df_filtered['BORE_OIL_VOL'] == max_oil_vol]['WELL_BORE_CODE'].iloc[0]
+    max_oil_vol_date = df_filtered[df_filtered['BORE_OIL_VOL'] == max_oil_vol]['DATEPRD'].iloc[0]
+    result_text = f"The well with the highest oil volume is {max_oil_vol_well} on {max_oil_vol_date.strftime('%Y-%m-%d')}."
+    return {'type': 'text', 'value': result_text}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-17 17:16:01 [WARNING] Error of executing code
+2023-11-17 17:16:01 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-11-17 17:16:01 [INFO] Failed with error: '__import__'. Retrying
+2023-11-17 17:16:13 [INFO] 
+Code running:
+```
+def analyze_data(dfs):
+    df = pd.concat(dfs)
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df_filtered = df[df['BORE_OIL_VOL'].notnull()]
+    max_oil_vol = df_filtered['BORE_OIL_VOL'].max()
+    max_oil_vol_well = df_filtered[df_filtered['BORE_OIL_VOL'] == max_oil_vol]['WELL_BORE_CODE'].iloc[0]
+    max_oil_vol_date = df_filtered[df_filtered['BORE_OIL_VOL'] == max_oil_vol]['DATEPRD'].iloc[0]
+    result_text = f"The well with the highest oil volume is {max_oil_vol_well} on {max_oil_vol_date.strftime('%Y-%m-%d')}."
+    return {'type': 'text', 'value': result_text}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-17 17:16:13 [WARNING] Error of executing code
+2023-11-17 17:16:13 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-11-17 17:16:13 [INFO] Failed with error: '__import__'. Retrying
+2023-11-17 17:16:26 [INFO] 
+Code running:
+```
+def analyze_data(dfs):
+    df = pd.concat(dfs)
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df_filtered = df[df['BORE_OIL_VOL'].notnull()]
+    max_oil_vol = df_filtered['BORE_OIL_VOL'].max()
+    max_oil_vol_well = df_filtered[df_filtered['BORE_OIL_VOL'] == max_oil_vol]['WELL_BORE_CODE'].iloc[0]
+    max_oil_vol_date = df_filtered[df_filtered['BORE_OIL_VOL'] == max_oil_vol]['DATEPRD'].iloc[0]
+    result_text = f"The well with the highest oil volume is {max_oil_vol_well} on {max_oil_vol_date.strftime('%Y-%m-%d')}."
+    return {'type': 'text', 'value': result_text}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-17 17:16:26 [WARNING] Error of executing code
+2023-11-17 17:16:27 [INFO] 127.0.0.1 - - [17/Nov/2023 17:16:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:16:44 [INFO] Question: I want to know what well that has the highest oil volume based on that data? also mention its date
+2023-11-17 17:16:44 [INFO] Running PandasAI with openai LLM...
+2023-11-17 17:16:44 [INFO] Prompt ID: d9f21d81-60b3-4ddf-a7d5-468b87c9ead2
+2023-11-17 17:16:44 [INFO] Using cached response
+2023-11-17 17:16:44 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Combine all dataframes into one
+    df = pd.concat(dfs)
+    
+    # Convert DATEPRD column to datetime
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    
+    # Sort the dataframe by BORE_OIL_VOL in descending order
+    df_sorted = df.sort_values(by='BORE_OIL_VOL', ascending=False)
+    
+    # Get the well with the highest oil volume
+    well = df_sorted.iloc[0]['WELL_BORE_CODE']
+    
+    # Get the date of the highest oil volume
+    date = df_sorted.iloc[0]['DATEPRD']
+    
+    # Return the result
+    return {
+        "type": "text",
+        "value": f"The well with the highest oil volume is {well} on {date}."
+    }
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-11-17 17:16:44 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = pd.concat(dfs)
+    df['DATEPRD'] = pd.to_datetime(df['DATEPRD'])
+    df_sorted = df.sort_values(by='BORE_OIL_VOL', ascending=False)
+    well = df_sorted.iloc[0]['WELL_BORE_CODE']
+    date = df_sorted.iloc[0]['DATEPRD']
+    return {'type': 'text', 'value': f'The well with the highest oil volume is {well} on {date}.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-11-17 17:16:44 [INFO] Answer: {'type': 'text', 'value': 'The well with the highest oil volume is Well-W1 on 2009-01-08 00:00:00.'}
+2023-11-17 17:16:44 [INFO] Executed in: 0.035785675048828125s
+2023-11-17 17:16:44 [INFO] 127.0.0.1 - - [17/Nov/2023 17:16:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:07 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:07] "GET / HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "[36mGET /assets/style.css?m=1700195501.8894563 HTTP/1.1[0m" 304 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "GET /_dash-layout HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "GET /_dash-dependencies HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "GET /_favicon.ico?v=2.13.0 HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "[36mGET /assets/waviv_logo.jpg HTTP/1.1[0m" 304 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:08 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:08] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 204 -
+2023-11-17 17:17:09 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:09 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:09 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:09 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:09 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:09 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:10 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:10 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:10 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:10 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:10 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:10] "[36mGET /_dash-component-suites/dash_leaflet/async-GeoJSON.js HTTP/1.1[0m" 304 -
+2023-11-17 17:17:10 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:10] "[36mGET /_dash-component-suites/dash_leaflet/async-MeasureControl.js HTTP/1.1[0m" 304 -
+2023-11-17 17:17:10 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:10 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:10 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:10] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2023-11-17 17:17:11 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:11] "[36mGET /_dash-component-suites/dash_ag_grid/async-community.js HTTP/1.1[0m" 304 -
+2023-11-17 17:17:11 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:11] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2023-11-17 17:17:11 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:11 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2023-11-17 17:17:11 [INFO] 127.0.0.1 - - [17/Nov/2023 17:17:11] "POST /_dash-update-component HTTP/1.1" 200 -
